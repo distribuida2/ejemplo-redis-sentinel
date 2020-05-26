@@ -84,20 +84,14 @@ docker-compose exec sentinel redis-cli -p 26379 SENTINEL get-master-addr-by-name
 
 ## Referencias
 
-[https://github.com/AliyunContainerService/redis-cluster][1]
+* https://github.com/AliyunContainerService/redis-cluster
+* https://registry.hub.docker.com/u/joshula/redis-sentinel/
+* https://docs.docker.com/compose/
 
-[https://registry.hub.docker.com/u/joshula/redis-sentinel/] [2]
+## Contribuidores, traducción y adaptación
 
-[https://docs.docker.com/compose/] [3]
-
-[1]: https://github.com/AliyunContainerService/redis-cluster
-[2]: https://registry.hub.docker.com/u/joshula/redis-sentinel/
-[3]: https://docs.docker.com/compose/
-
-## Contribuidores
+El código original surgió de https://github.com/mustafaileri/redis-cluster-with-sentinel
 
 * Mustafa Ileri (<mi@mustafaileri.com>)
 
-## Traducido y adaptado
-
-Este repositorio fue traducido y adaptado para la materia Programación Distribuida II de la Universidad Nacional de Avellaneda
+Fue traducido y adaptado para la materia Programación Distribuida II de la Universidad Nacional de Avellaneda
