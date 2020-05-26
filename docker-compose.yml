@@ -1,0 +1,15 @@
+master:
+  image: redis:6
+replica:
+  image: redis:6
+  command: redis-server --replicaof redis-master 6379
+  links:
+    - master:redis-master
+sentinel:
+  build: sentinel
+  environment:
+    - SENTINEL_DOWN_AFTER=5000
+    - SENTINEL_FAILOVER=5000
+  links:
+    - master:redis-master
+    - replica
